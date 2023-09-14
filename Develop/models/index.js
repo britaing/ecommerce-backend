@@ -14,14 +14,14 @@ Categories.hasMany(Products);
 
 // Products belongToMany Tags (through ProductTag)
 
-Products.belongsToMany(Tags, () => {
-  through: {
-    model: ProductTag,
-    unique: false
+// Products.belongsToMany(Tags, () => {
+//   through: {
+//     model: ProductTag,
+//     unique: false
 
-  },
-  as
-});
+//   }
+  
+// });
 
 // Tags belongToMany Products (through ProductTag)
 
